@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: ms-bootcoin-accounts
+  cloud:
+    stream:
+      function:
+        definition: transactionEventConsumer
+      bindings:
+        transactionEventConsumer-in-0:
+          destination: bootcointransactions
+    config:
+      uri: https://ms-config-server.azurewebsites.net
