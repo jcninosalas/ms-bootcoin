@@ -4,9 +4,11 @@ spring:
   cloud:
     stream:
       function:
-        definition: transactionEventConsumer
+        definition: transactionEventConsumer;accountCreatedPublisher
       bindings:
         transactionEventConsumer-in-0:
-          destination: bootcointransactions
+          destination: bootcointransactions #topico en kafka
+        accountCreatedPublisher-out-0:
+          destinations: bootcoinaccounts #topico en kafka
     config:
       uri: https://ms-config-server.azurewebsites.net

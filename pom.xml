@@ -54,6 +54,14 @@
 			<artifactId>reactor-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+
+		<!--        bootstrap-->
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-bootstrap</artifactId>
+			<version>3.0.3</version>
+		</dependency>
+
 	</dependencies>
 	<dependencyManagement>
 		<dependencies>
